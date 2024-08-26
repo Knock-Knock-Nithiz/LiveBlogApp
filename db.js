@@ -9,10 +9,12 @@ MongoClient.connect(process.env.CONNECTIONSTRING)
     console.log("Database connected successfully.");
 
     // Start server
-    return app.listen(process.env.PORT);
+    const port = process.env.PORT || 3000;
+    return app.listen(port);
   })
   .then(() => {
-    console.log("Server listening on port 3000");
+    const port = process.env.PORT || 3000;
+    console.log(`Server listening on port ${port}`);
   })
   .catch((err) => {
     console.error("Error connecting to the database:", err);
