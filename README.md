@@ -59,7 +59,17 @@ Live Blog App is a real-time chat application that uses various modern web techn
      npm run watch
 
 
-###Deployment
+### Deployment
+Deployment
+The application is deployed on Render and can be accessed at (https://liveblogapp.onrender.com/).
+
+-**Steps for Deployment**
+Push the code to your GitHub repository.
+Create a new Web Service on Render: 
+    1. Connect your GitHub repository. 
+    2. Set up the environment variables, if any.
+    3. Choose the npm start as the build command. Deploy the app.
+    
 -**To deploy the application:**
 
 -Ensure the .env file is properly set with production values.
