@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "watch": "cross-env concurrently \"nodemon db --ignore frontend-js --ignore public/\" \"webpack --watch\"",
-    "start": "node app.js",
+    "start": "node db.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
